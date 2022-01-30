@@ -3,6 +3,7 @@ This project is aimed at detection of brain tumor from MRI Scan using Mask R-CNN
 
 
 
+Table of Contents
 S No.	Title	Page No.
 	Acknowledgements		i
 	Executive Summary	ii
@@ -29,3 +30,4 @@ S No.	Title	Page No.
 7.	Future Work	36
 8.	References	37-38
 	APPENDIX A	39-51
+
