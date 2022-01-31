@@ -5,13 +5,48 @@ This project is aimed at detection of brain tumor from MRI Scan using Mask R-CNN
 ## List of Figures:
 
 Understanding Basic Terminology
+
 R-CNN Architecture
+
 Fast R-CNN Architecture
+
 Faster R-CNN
+
 Mask R-CNN
+
 Visualization of Mask R-CNN process
+
 Basic Architecture of Mask R-CNN
+
 Process Model
+
 Architecture of Mask R-CNN
+
 Project Work Flow
+
 Images in Dataset
+
+
+## List of Abbreviations
+
+MRI						Magnetic Resonance Image
+
+R-CNN					Recurrent Convolutional Neural Network
+
+IoU						Intersection over Union
+
+CT						Computed Tomography
+
+GBM						Glioblastoma Multiforme
+
+ROI						Region of Interest
+
+RPN						Region Proposal Network
+
+FPN						Feature Pyramid Network
+
+MS COCO					Microsoft Common Objects in Context
+
+HGG						High Grade Glioma
+
+LGG						Low Grade Glioma
