@@ -67,4 +67,14 @@ Mask R-CNN architecture is an instance segmentation method. Using Mask R-CNN, th
 The aim of this project is to distinguish gliomas which are the most difficult brain tumors to be detected with deep learning algorithms. Because, for a skilled radiologist, analysis of multimodal MRI scans can take up to 20 minutes and therefore, making this process automatic is obviously useful.
 
 MRI can show different tissue contrasts through different pulse sequences, making it an adaptable and widely used imaging technique for visualizing regions of interest in the human brain. Gliomas are the most commonly found tumors having irregular shape and ambiguous boundaries, making them one of the hardest tumors to detect. Detection of brain tumor using a segmentation approach is critical in cases, where survival of a subject depends on an accurate and timely clinical diagnosis.
+
 We present a fully automatic deep learning approach for brain tumor segmentation in multi-contrast magnetic resonance image.
+
+Motivation
+
+In 2018, brain tumours were ranked as the 10th most common kind of tumour among Indians. The International Association of Cancer Registries (IARC) reported that there are over 28,000 cases of brain tumours reported in India each year and more than 24,000 people reportedly die due to brain tumours annually. Brain tumour is a serious condition and can be fatal if not detected early and treated.
+
+The incidence of central nervous system (CNS) tumors in India ranges from 5 to 10 per 100,000 population with an increasing trend and accounts for 2% of malignancies. Hospital-based databases capturing CNS malignancies had been analyzed prospectively from registrations in the neuro-oncology clinic of a tertiary care center over a period of 1 year. Astrocytomas (38.7%) were the most common primary tumors with the majority being high-grade gliomas (59.5%).
+
+These statistics are disturbing which provided that the need of the hour is to detect brain tumor as early and accurately as possible.
+
