@@ -52,9 +52,9 @@ HGG						High Grade Glioma
 LGG						Low Grade Glioma
 
 
-1- Introduction
+## Introduction
 
-1.1. Objective
+### Objective
 Imaging technology in medicine made the doctors to see the interior portions of the body for easy diagnosis. It also helped doctors to make keyhole surgeries for reaching the interior parts without really opening too much of the body. CT scanner, Ultrasound and Magnetic Resonance Imaging (MRI) took over X-Ray imaging by making the doctors to look at the body's elusive third dimension. Image processing techniques developed for analyzing remote sensing data may be modified to analyze the outputs of medical imaging systems to get best advantage to analyze symptoms of the patients with ease. 
 
 The problem domain mainly belongs to the Segmentation part of the Fundamental Steps in Digital Image Processing whose output is generally image attributes instead of images.
@@ -70,7 +70,7 @@ MRI can show different tissue contrasts through different pulse sequences, makin
 
 We present a fully automatic deep learning approach for brain tumor segmentation in multi-contrast magnetic resonance image.
 
-Motivation
+### Motivation
 
 In 2018, brain tumours were ranked as the 10th most common kind of tumour among Indians. The International Association of Cancer Registries (IARC) reported that there are over 28,000 cases of brain tumours reported in India each year and more than 24,000 people reportedly die due to brain tumours annually. Brain tumour is a serious condition and can be fatal if not detected early and treated.
 
@@ -78,5 +78,9 @@ The incidence of central nervous system (CNS) tumors in India ranges from 5 to 1
 
 These statistics are disturbing which provided that the need of the hour is to detect brain tumor as early and accurately as possible.
 
-and statistical methods are unable to adequately segment the various elements of the GBM, such as local contrast enhancement, necrosis, and edema. Most voxel-based methods cannot   achieve satisfactory results in larger data sets, and the methods based on generative or discriminative models have intrinsic limitations during application, such as small sample set learning and transfer. A new method was developed to overcome these challenges.
+
+### Background
+
+Brain tumor is a group of tissue that is prearranged by a slow addition of irregular cells. It occurs when abnormal formation of cells takes place within the brain. Recently it is becoming a major cause of death of many people. The seriousness of brain tumor is very big among all the variety of cancers, so to save a life, immediate detection and proper treatment is required. Detection of these cells is a difficult problem, because of the formation of the tumor cells. It is very essential to compare brain tumor from the MRI treatment.
+Simple thresholds and statistical methods are unable to adequately segment the various elements of the GBM, such as local contrast enhancement, necrosis, and edema. Most voxel-based methods cannot   achieve satisfactory results in larger data sets, and the methods based on generative or discriminative models have intrinsic limitations during application, such as small sample set learning and transfer. A new method was developed to overcome these challenges.
 There are two main types of tumors: cancerous (malignant) tumors and benign tumors. Malignant tumors can be divided into primary tumors, which start within the brain, and secondary tumors, which have spread from elsewhere, known as brain metastasis tumors. This project, however, only deals with only the detection of tumor i.e. present or not present.
