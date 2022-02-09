@@ -100,3 +100,11 @@ Goals
 4.	Reduce the detection time of the tumor
 
 These are some of the major goals aimed to achieve through this project.
+
+
+### Design Approach and Details
+
+The work proposed is to detect brain tumor from MRI scans using Mask R-CNN Architecture. Using Mask R-CNN, the image is automatically segmented and pixel-wise masks are constructed for every object i.e. tumor in an image, here MRI scan.
+Object detectors, such as YOLO, Faster R-CNNs, and Single Shot Detectors (SSDs), generate four sets of (x, y)-coordinates which represent the bounding box of an object in an image.
+Obtaining the bounding boxes of an object is a good start but the bounding box itself doesn’t tell us anything about (1) which pixels belong to the foreground object and (2) which pixels belong to the background.
+Mask R-CNN allows to generate a mask for each object in our image, thereby allowing to segment the foreground object from the background.
