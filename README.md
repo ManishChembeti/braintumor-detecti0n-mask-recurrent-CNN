@@ -85,6 +85,18 @@ Brain tumor is a group of tissue that is prearranged by a slow addition of irreg
 Simple thresholds and statistical methods are unable to adequately segment the various elements of the GBM, such as local contrast enhancement, necrosis, and edema. Most voxel-based methods cannot   achieve satisfactory results in larger data sets, and the methods based on generative or discriminative models have intrinsic limitations during application, such as small sample set learning and transfer. A new method was developed to overcome these challenges.
 There are two main types of tumors: cancerous (malignant) tumors and benign tumors. Malignant tumors can be divided into primary tumors, which start within the brain, and secondary tumors, which have spread from elsewhere, known as brain metastasis tumors. This project, however, only deals with only the detection of tumor i.e. present or not present.
 
-Project Description and Goals
+
+### Project Description and Goals
+
 Project Description
+
 The project involves detection of brain tumor in MRI scan using Mask R-CNN Architecture. Pre-processed data is given as input to the Mask R-CNN model, which is pre-trained on MS COCO Dataset. So, transfer learning is done and the heads of the neural network are trained with the new dataset.
+
+Goals
+
+1.	To accurately detect the tumor in MRI scan of brain.
+2.	Return Accuracy Score and IoU (Intersection over Union)
+3.	Return Bounding box around the tumor
+4.	Reduce the detection time of the tumor
+
+These are some of the major goals aimed to achieve through this project.
