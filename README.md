@@ -152,3 +152,21 @@ However, the problem with the R-CNN method is it’s incredibly slow. And furthe
 
 To improve upon the original R-CNN, Fast R-CNN algorithm was proposed.
 
+![image](https://user-images.githubusercontent.com/59841174/155372674-8dd585e3-9dc7-4d15-a749-7631b82e48fd.png)
+R-CNN Architecture
+
+Fast R-CNN-
+
+Similar to the original R-CNN, Fast R-CNN still utilizes Selective Search to obtain region proposals; however, the novel contribution from the paper was Region of Interest (ROI) Pooling module.
+
+ROI Pooling works by extracting a fixed-size window from the feature map and using these features to obtain the final class label and bounding box. The primary benefit here is that the network is now, effectively, end-to-end trainable:
+
+1.	We input an image and associated ground-truth bounding boxes
+
+2.	Extract the feature map
+
+3.	Apply ROI pooling and obtain the ROI feature vector
+
+4.	And finally, use the two sets of fully-connected layers to obtain (1) the class label predictions and (2) the bounding box locations for each proposal.
+While the network is now end-to-end trainable, performance suffered dramatically at inference (i.e., prediction) by being dependent on Selective Search.
+To make the R-CNN architecture even faster we need to incorporate the region proposal directly into the R-CNN.
