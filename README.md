@@ -121,4 +121,34 @@ Semantic segmentation algorithms require us to associate every pixel in an input
 While semantic segmentation algorithms are capable of labelling every object in an image, they cannot differentiate between two objects of the same class.
 This behaviour is especially problematic if two objects of the same class are partially occluding each other — we have no idea where the boundaries of one object ends and the next one begins, as demonstrated by the two purple cubes, we cannot tell where one cube starts and the other ends.
 
-Instance segmentation algorithms, on the other hand, compute a pixel-wise mask for every object in the image, even if the objects are of the same class label i.e. it locates each pixel of every object in the image instead of the bounding boxes. It does so by using an additional fully convolutional network on top of a CNN based feature map with input as feature map and gives matrix with 1 on all locations where the pixel belongs to the object and 0 elsewhere as the output. The Mask R-CNN is an instance-based segmentation algorithm.
+Instance segmentation algorithms, on the other hand, compute a pixel-wise mask for every object in the image, even if the objects are of the same class label i.e. it locates each pixel of every object in the image instead of the bounding boxes. It does so by using an additional fully convolutional network on top of a CNN based feature map with input as feature map and gives matrix with 1 on all locations where the pixel belongs to the object and 0 elsewhere as the output. 
+
+The Mask R-CNN is an instance-based segmentation algorithm.
+
+![image](https://user-images.githubusercontent.com/59841174/155372502-aa7e4556-8578-4de0-a2df-5c0062f4e4b1.png)
+
+In order to understand Mask R-CNN let’s briefly review the R-CNN variants, starting with the original R-CNN-
+Original R-CNN-
+
+The original R-CNN algorithm is a four-step process:
+
+•	Step 1: Input an image to the network.
+
+•	Step 2: Extract region proposals (i.e., regions of an image that potentially contain objects) 
+To solve the problem of selecting a huge number of regions, a selective search is used to extract just 2000 regions from the image and this is known as region proposals. Therefore, instead of trying to classify a large number of regions, we can just work with 2000 regions 
+Therefore, Selective Search algorithm is used.
+Selective search algorithm is as follows –
+1. Generate initial sub-segmentation (many candidate regions)
+2. Use a greedy algorithm to recursively combine similar regions
+3. Use generated regions to produce the final region proposals
+
+•	Step 3: Use transfer learning, specifically feature extraction, to compute features for each proposal (which is effectively an ROI) using the pre-trained CNN (ResNet101 Architecture).
+
+•	Step 4: Classify each proposal using the extracted features with a Support Vector Machine (SVM).
+
+The reason this method works is due to the robust, discriminative features learned by the CNN.
+
+However, the problem with the R-CNN method is it’s incredibly slow. And furthermore, we’re not actually learning to localize via a deep neural network, we’re effectively just building a more advanced HOG + Linear SVM detector.
+
+To improve upon the original R-CNN, Fast R-CNN algorithm was proposed.
+
