@@ -116,7 +116,9 @@ When performing traditional image classification our goal is to predict a set of
 Object detection builds on image classification, but this time allows us to localize each object in an image. The image is now characterized by:
 1.	Bounding box (x, y)-coordinates for each object
 2.	An associated class label for each bounding box
-## Semantic segmentation algorithms require us to associate every pixel in an input image with a class label (including a class label for the background).
+
+Semantic segmentation algorithms require us to associate every pixel in an input image with a class label (including a class label for the background).
 While semantic segmentation algorithms are capable of labelling every object in an image, they cannot differentiate between two objects of the same class.
 This behaviour is especially problematic if two objects of the same class are partially occluding each other — we have no idea where the boundaries of one object ends and the next one begins, as demonstrated by the two purple cubes, we cannot tell where one cube starts and the other ends.
-## Instance segmentation algorithms, on the other hand, compute a pixel-wise mask for every object in the image, even if the objects are of the same class label i.e. it locates each pixel of every object in the image instead of the bounding boxes. It does so by using an additional fully convolutional network on top of a CNN based feature map with input as feature map and gives matrix with 1 on all locations where the pixel belongs to the object and 0 elsewhere as the output. The Mask R-CNN is an instance-based segmentation algorithm.
+
+Instance segmentation algorithms, on the other hand, compute a pixel-wise mask for every object in the image, even if the objects are of the same class label i.e. it locates each pixel of every object in the image instead of the bounding boxes. It does so by using an additional fully convolutional network on top of a CNN based feature map with input as feature map and gives matrix with 1 on all locations where the pixel belongs to the object and 0 elsewhere as the output. The Mask R-CNN is an instance-based segmentation algorithm.
